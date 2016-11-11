@@ -1,0 +1,113 @@
+/* Blue Theme Stylesheet */
+
+	.contentcontainer .altheading {
+	background: #EF553A;
+	border: 1px solid #EF553A;
+	color: #fff;
+	text-shadow: 1px 1px 1px #2D738A;
+}
+/* Navigation Styling */
+			
+	ul#nav li a.heading, a.collapsed, a.expanded, ul.navigation li.selected {
+	border-bottom: 1px solid #006F93;
+	border-top: 1px solid #2DABD5;
+	text-shadow: 1px 1px 1px #0D2C35;
+	background: url(img/bg_navigation.png) no-repeat top;
+}
+ul#nav li a.expanded {
+	background: url(img/bg_navigation.png) 0 -76px;
+}
+ul#nav li a.collapsed:hover {
+	background: url(img/bg_navigation.png) no-repeat 0 -38px;
+	width: 205px;
+}
+ul#nav li a.expanded:hover {
+	background: url(img/bg_navigation.png) no-repeat 0 -114px;
+	width: 205px;
+}
+ul.navigation li.selected {
+	background: url(img/bg_navigation_selected.png) no-repeat -1px 0;
+	border: none;
+}
+/* Side Notifications */
+	
+	.notifycount {
+	background: url(img/bg_notify_count.png) no-repeat top;
+}
+/* Pagination */
+	
+	ul.pagination li.page a {
+	background: #ef553a;
+	border: 1px solid #ef553a;
+}
+ul.pagination li.page a:hover {
+	background: #ef553a;
+	border: 1px solid #005977;
+}
+/* Button Styling */
+	
+.btn, .btnalt {
+	/* background: url(img/bg_buttons.png) repeat-x top; */
+	background:#3b5998;
+	border: 1px solid #486ebc;
+	color: #fff;
+	font-size: 11px;
+	padding: 8px 6px 6px;
+	boirder-radius: 7px;
+	-moz-border-radius: 7px;
+	font-weight: 700;
+	border: none;
+}
+.btn:hover {
+	/*background: url(img/bg_buttons.png) 0 -50px;*/
+	background: #3b5998 ;
+	cursor: pointer;
+}
+.btnalt {
+	background:#ef553a;
+	border: 1px solid #ef553a;
+	color: #fff;
+	padding: 8px 6px 6px;
+	/*border: none;*/
+}
+.btnalt:hover {
+	background: #3b5998;
+	border: 1px solid #486ebc;
+	cursor: pointer;
+}
+/* Login Page */
+	
+.logininput {
+	background: #fff;
+}
+.logininput:focus {
+	border: 1px solid #09C;
+	color: #09C;
+}
+#logincontainer .loginbtn {
+	background: #3B5998 ;
+	/* border-radius: 8px;
+	-moz-border-radius: 8px; */
+	border: none;
+	font-size: 25px;
+	font-weight: 700;
+	/* text-shadow: 1px 1px 1px #9cced6; */
+	color: #ffffff;
+	width: 260px;
+	padding: 11px 0;
+	margin: 5px 0 0 0;
+	display: block;
+	cursor: pointer;
+	border-top: 1px solid #BEDFEF;
+	letter-spacing: -1px;
+}
+#logincontainer .loginbtn:hover {
+	background: #3b5998;
+	cursor: pointer;
+	color: #ffffff;
+}
+.control_panel{ color: #333;
+float: left;
+font-size: 22px;
+margin:32px 0 0;
+padding: 0 0 0 20px; font-weight:bold;}

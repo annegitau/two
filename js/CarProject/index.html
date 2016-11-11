@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<title>CAR POOL</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+        
+
+		<script>
+			var userAgent = navigator.userAgent + '';
+			if (userAgent.indexOf('iPhone') > -1) {
+				document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+				var mobile_system = 'iphone';
+			} else if (userAgent.indexOf('Android') > -1) {
+				document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+				var mobile_system = 'android';
+			} else {
+				var mobile_system = '';
+			}
+		</script>
+
+		<script src="js/lib/jquery.js"></script>
+		<!-- your scripts here -->
+		<script src="js/app/app.js"></script>
+		<script src="js/app/bootstrap.js"></script>
+		<script src="js/lib/jquery.mobile.js"></script>
+        <script type="text/javascript" src="myScript.js" ></script>
+		<style>
+			.ui-selectmenu.ui-popup .ui-input-search {
+				margin-left: .5em;
+				margin-right: .5em;
+			}
+			.ui-selectmenu.ui-dialog .ui-content {
+				padding-top: 0;
+			}
+			.ui-selectmenu.ui-dialog .ui-selectmenu-list {
+				margin-top: 0;
+			}
+			.ui-selectmenu.ui-popup .ui-selectmenu-list li.ui-first-child .ui-btn {
+				border-top-width: 1px;
+				-webkit-border-radius: 0;
+				border-radius: 0;
+			}
+			.ui-selectmenu.ui-dialog .ui-header {
+				border-bottom-width: 1px;
+			}
+			a {
+				text-decoration: none;
+			}
+		</style>
+
+	</head>
+    <body>
+        <div data-role="page" id="landingPage" style="background: white">
+            <div data-role="header" style="text-shadow: none">
+				<h1>Welcome</h1>
+				<a href="#landingPage" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+            </div><!-- header -->
+            <img src="img/logo.jpg" />
+            <div data-role="content" style="text-shadow: none">
+                <div style="background:rgb(125, 232, 125);color:white; text-align:center; font-weight:bolder; padding: 20px;box-shadow: 5px 5px 5px grey;">
+                    WELCOME TO CAR POOLING!<br>
+					<a href="#loginPage" data-transition="flip">Get Started</a>
+                    </div>
+			</div><!-- content -->
+        </div><!-- Home page -->
+            
+        
+        <div data-role="page" id="loginPage" style="background: white">
+            <div data-role="header" style="text-shadow: none">
+				<h1>Login</h1>
+				<a href="#landingPage" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+            </div><!-- header -->
+            <div data-role="content" style="text-shadow: none">   
+                <div style="background: rgb(125, 232, 125);color:#000099; text-align:left; font-weight:bolder; padding: 20px;box-shadow: 5px 5px 5px grey;">
+                    <form action="">
+                        <div class="imgcontainer">
+                            <img src="img/logo.jpg">
+                        </div>
+                        
+                        <div class="container">
+                            <label><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="username" >
+                            
+                            <label><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="password" >
+                            <a href=#homePage>
+                            <button type="submit" >Login</button></a>
+                            <input type="checkbox" checked="checked">Remember me
+                            <a href="#landingPage">
+                            <button type="button" class="cancelbtn" >Cancel</button></a>
+                        </div>
+                    </form>
+                    </div>
+            </div><!-- content -->
+        </div><!-- Login page -->
+               
+        <div data-role="page" id="homePage" style="background: white">
+            <div data-role="header" style="text-shadow: none">
+				<h1>Home</h1>
+				<a href="#homePage" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+            </div><!-- header -->
+            <div data-role="content" style="text-shadow: none">
+                 <div style="background: rgb(125, 232, 125);color:#000099; text-align:center; font-weight:bolder; padding: 20px;box-shadow: 5px 5px 5px grey;">
+                    <form action="">
+                        <div class="imgcontainer">
+                            <img src="img/logo.jpg">
+                        </div>
+                        
+                        <div class="container">
+                            <a href=#createPool>
+                            <button type="submit" >CREAT POOL</button></a>
+                            <a href="#checkPool">
+                            <button type="button" class="cancelbtn" >CHECK POOL</button></a>
+                            <a href=#newsFeed>
+                            <button type="submit" >NEWSFEED</button></a>
+                            <a href="#landingPage">
+                            <button type="button" class="cancelbtn" >CANCEL</button></a>
+                        </div>
+                    </form>
+                    </div>
+            </div><!-- content -->
+        </div><!-- Home page -->
+       
+        <div data-role="page" id="createPool" style="background: white">
+            <div data-role="header" style="text-shadow: none">
+				<h1>Create Pool</h1>
+				<a href="#createPool" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+            </div><!-- header -->
+            <div data-role="content" style="text-shadow: none">
+                <div style="background: rgb(125, 232, 125);color:#000099; text-align:center; font-weight:bolder; padding: 20px;box-shadow: 5px 5px 5px grey;">
+                    <form action="">
+                        <div class="imgcontainer">
+                            <img src="img/logo.jpg">
+                        </div>                        
+                        <div class="container">
+                            <label><b>FROM ASHESI TO </b></label>
+                            <input type="text" placeholder="Enter Destination" name="destination" >
+                            <a href=#checkPool>
+                            <button type="submit" >Create</button></a>
+                            <a href="#homePage">
+                            <button type="button" class="cancelbtn" >Cancel</button></a>
+                        </div>
+                    </form>
+                    </div>
+                
+            </div><!-- content -->
+        </div><!-- Create Pool page -->
+       
+        <div data-role="page" id="checkPool" style="background: white">
+            <div data-role="header" style="text-shadow: none">
+				<h1>Check Pool</h1>
+				<a href="#checkPool" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+            </div><!-- header -->
+            <div data-role="content" style="text-shadow: none">
+                <div style="background: rgb(125, 232, 125);color:#000099; text-align:center; font-weight:bolder; padding: 20px;box-shadow: 5px 5px 5px grey;">
+                    <form action="">
+                        <div class="imgcontainer">
+                            <img src="img/logo.jpg">
+                        </div>                        
+                        <div class="container">
+                            <input type="search" id="mySearch" placeholder="Search for destination..">
+                            Results. 
+                            <!-- results of available pool -->
+                            <a href=#joinPool>
+                            <button type="submit" >JOIN POOL</button></a>
+                        </div>
+                        <div  class="container">
+                            No pool for your destination? 
+                        <a href=#createPool>
+                            <button type="submit" >CREAT POOL!</button></a></div>
+                    </form>
+                    </div>
+            </div><!-- content -->
+        </div><!-- Check pool page -->
+       
+        
+        <div data-role="page" id="joinPool" style="background: white">
+            <div data-role="header" style="text-shadow: none">
+				<h1>Join Pool</h1>
+				<a href="#joinPool" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+            </div><!-- header -->
+            <img src="img/logo.jpg" />
+            <div data-role="content" style="text-shadow: none">
+            </div><!-- content -->
+        </div><!-- Join pool page -->
+
+        
+        <div data-role="page" id="newsFeed" style="background: white">
+            <div data-role="header" style="text-shadow: none">
+				<h1>News Feed</h1>
+				<a href="#newsFeed" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+            </div><!-- header -->
+            <div data-role="content" style="text-shadow: none">
+                <div style="background: rgb(125, 232, 125);color:#000099; text-align:center; font-weight:bolder; padding: 20px;box-shadow: 5px 5px 5px grey;">
+                    <form action="">
+                        <div class="imgcontainer">
+                            <img src="img/logo.jpg">
+                        </div>                        
+                        <div  class="container">
+                          <button id="geolocationdata">geolocation</button>
+                            <div id="divWatchMeMove">My Current Position</div>
+                            <button id="clearWatchbtn">Reset</button>
+                            <br />
+                            <button id="capturePhoto">camera</button>	<br />
+                            <div><center><img class="lazy" style="display:none;width:100%;height:100%;" id="smallImage" src="" /></center></div>
+                            <br />
+                        </div>
+                    </form>
+                    </div>
+            </div><!-- content -->
+        </div><!-- News Feed page -->
+
+    </body>
+</html>
